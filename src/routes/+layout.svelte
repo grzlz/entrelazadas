@@ -26,8 +26,7 @@
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 					stroke-width="2"
-					class="w-6 h-6 transition-transform duration-100"
-					class:rotate-90={menuOpen}
+					class="w-6 h-6"
 				>
 				<line x1="4" y1="6" x2="20" y2="6" />
 				<line x1="4" y1="12" x2="20" y2="12" />
