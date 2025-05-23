@@ -26,7 +26,7 @@
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 					stroke-width="2"
-					class="w-6 h-6 transition-transform duration-300"
+					class="w-6 h-6 transition-transform duration-100"
 					class:rotate-90={menuOpen}
 				>
 				<line x1="4" y1="6" x2="20" y2="6" />
@@ -38,7 +38,7 @@
 	</nav>
 
 	{#if menuOpen}
-	<ul class="flex flex-col bg-gray-700 text-gray-400 p-2 gap-2 text-center rounded-b-lg" in:slide={{ duration: 400 }} out:slide={{ duration: 400 }}>
+	<ul class="flex flex-col bg-gray-700 text-gray-400 p-2 gap-2 text-center rounded-b-lg" in:slide={{ duration: 300 }} out:slide={{ duration: 300 }}>
 		<li>Uno</li>
 		<li>Dos</li>
 
