@@ -48,8 +48,7 @@
 	{@render children()}
 
 
-	<footer class="mt-auto flex justify-center gap-4">
-		<p>2025	</p>
-		<p>Hecho por icarus.mx</p>
-	</footer>
+
+
+
 </div>

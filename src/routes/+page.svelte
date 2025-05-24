@@ -1,3 +1,7 @@
+<script>
+    let abrir = $state(false)
+</script>
+
 <main class="flex flex-col bg-gray-400 min-h-screen">
     <section class="prose text-center mx-auto">
 
@@ -5,15 +9,14 @@
         <p>Continuan los intentos</p>
     </section>
 
-    <section class="flex flex-col bg-gray-200 text-center shadow-2xl">
+    <section class="flex flex-col bg-gray-900 text-center shadow-2xl">
         <p>Holaaa</p>
         <p>Holaaa</p>
         <p>Holaaa</p>
         <p>Holaaa</p>
         <p>Holaaa</p>
         <p>Holaaa</p>
-        <p>Holaaa</p>
-        <p>Holaaa</p>
+
         <p>Holaaa</p>
         <p>Holaaa</p>
         <p>Holaaa</p>
