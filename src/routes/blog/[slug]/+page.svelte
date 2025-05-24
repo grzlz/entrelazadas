@@ -26,12 +26,11 @@
   </header>
 
   <!-- Main Content and Author Aside Container -->
-  <div class="md:flex md:flex-row-reverse md:items-start gap-8">
+  <div class="flex flex-col flex-col-reverse md:flex-row-reverse md:items-start gap-8">
     <!-- Author Sidebar (Aside) -->
     <aside class="md:w-1/4 md:flex-shrink-0">
       <div class="flex flex-col items-center md:items-start bg-gray-50 border border-gray-200 p-4 rounded-lg gap-2">
-        <img src="{post.author.avatar}" alt="{post.author.name}'s avatar"
-             class="w-20 h-20 md:w-24 md:h-24 rounded-full">
+
         <p class="text-lg font-semibold">{post.author.name}</p>
         <p class="text-sm text-gray-600">{post.author.title}</p>
       </div>
@@ -41,7 +40,7 @@
     <section class="md:flex-1 text-gray-800 leading-relaxed">
       <!-- Featured Hero Image -->
       <img src="{post.heroImage}" alt="Featured image for the post"
-           class="w-full h-auto rounded-lg mb-6" />
+           class="" />
       <!-- Example Paragraphs and Rich Text -->
       <p class="mb-4">
         This is the opening paragraph of the blog post content. It introduces the topic and provides some context to engage the reader.
@@ -49,7 +48,7 @@
       <h2 class="text-2xl font-semibold mb-4">Subheading Example</h2>
       <p class="mb-4">
         Another paragraph follows the subheading, containing some inline <strong>bold text</strong> and even an inline image 
-        <img src="/path/to/inline-image.jpg" alt="Inline demo" 
+        <img src="/favicon.png" alt="Inline demo" 
              class="w-32 h-auto inline-block rounded mx-2" /> 
         to illustrate how images can appear within text.
       </p>
