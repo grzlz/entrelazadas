@@ -14,6 +14,7 @@
   const formattedDate = new Date(post.date).toLocaleDateString(undefined, {
     year: 'numeric', month: 'long', day: 'numeric'
   });
+
 </script>
 
 <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,48 +27,48 @@
   </header>
 
   <!-- Main Content and Author Aside Container -->
-  <div class="flex flex-col flex-col-reverse md:flex-row-reverse md:items-start gap-8">
+  <div class="flex flex-col md:items-start gap-8">
     <!-- Author Sidebar (Aside) -->
-    <aside class="md:w-1/4 md:flex-shrink-0">
-      <div class="flex flex-col items-center md:items-start bg-gray-50 border border-gray-200 p-4 rounded-lg gap-2">
-
-        <p class="text-lg font-semibold">{post.author.name}</p>
-        <p class="text-sm text-gray-600">{post.author.title}</p>
-      </div>
-    </aside>
-
+    
     <!-- Article Content Section -->
     <section class="md:flex-1 text-gray-800 leading-relaxed">
-      <!-- Featured Hero Image -->
-      <img src="{post.heroImage}" alt="Featured image for the post"
-           class="" />
-      <!-- Example Paragraphs and Rich Text -->
-      <p class="mb-4">
-        This is the opening paragraph of the blog post content. It introduces the topic and provides some context to engage the reader.
-      </p>
-      <h2 class="text-2xl font-semibold mb-4">Subheading Example</h2>
-      <p class="mb-4">
-        Another paragraph follows the subheading, containing some inline <strong>bold text</strong> and even an inline image 
-        <img src="/favicon.png" alt="Inline demo" 
-             class="w-32 h-auto inline-block rounded mx-2" /> 
-        to illustrate how images can appear within text.
-      </p>
-      <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-700 mb-4">
-        “This is a blockquote example, used to highlight an important excerpt or quote from the article.”
-      </blockquote>
-      <ul class="list-disc pl-5 mb-4">
-        <li>First list item to illustrate a bullet list in the post.</li>
-        <li>Second list item with additional details for readers.</li>
-        <li>Third list item as part of the example list.</li>
-      </ul>
-      <p class="mb-4">
-        You can also include links in your content, for example a 
-        <a href="#" class="text-blue-600 underline hover:text-blue-800">relevant resource link</a> 
-        to supplement the article.
-      </p>
-      <p class="mb-4">
-        Finally, this is a concluding paragraph to wrap up the post. It summarizes the key points and might invite the reader to comment or share.
-      </p>
+        <!-- Featured Hero Image -->
+        <img src="{post.heroImage}" alt="Featured image for the post"
+        class="" />
+        <!-- Example Paragraphs and Rich Text -->
+        <p class="mb-4">
+            This is the opening paragraph of the blog post content. It introduces the topic and provides some context to engage the reader.
+        </p>
+        <h2 class="text-2xl font-semibold mb-4">Subheading Example</h2>
+        <p class="mb-4">
+            Another paragraph follows the subheading, containing some inline <strong>bold text</strong> and even an inline image 
+            <img src="/favicon.png" alt="Inline demo" 
+            class="w-32 h-auto inline-block rounded mx-2" /> 
+            to illustrate how images can appear within text.
+        </p>
+        <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-700 mb-4">
+            “This is a blockquote example, used to highlight an important excerpt or quote from the article.”
+        </blockquote>
+        <ul class="list-disc pl-5 mb-4">
+            <li>First list item to illustrate a bullet list in the post.</li>
+            <li>Second list item with additional details for readers.</li>
+            <li>Third list item as part of the example list.</li>
+        </ul>
+        <p class="mb-4">
+            You can also include links in your content, for example a 
+            <a href="#" class="text-blue-600 underline hover:text-blue-800">relevant resource link</a> 
+            to supplement the article.
+        </p>
+        <p class="mb-4">
+            Finally, this is a concluding paragraph to wrap up the post. It summarizes the key points and might invite the reader to comment or share.
+        </p>
     </section>
-  </div>
+    <aside class="w-full mb-3">
+        <div class="flex flex-col items-center md:items-start bg-gray-50 border border-gray-200 p-4 rounded-lg gap-2">
+    
+        <p class="text-lg font-semibold">{post.author.name}</p>
+        <p class="text-sm text-gray-600">{post.author.title}</p>
+        </div>
+    </aside>
+</div>
 </article>
