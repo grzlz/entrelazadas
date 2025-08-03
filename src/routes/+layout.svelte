@@ -23,7 +23,7 @@
 			</div>
 			<div>
 				<h1 class="font-primary font-bold text-primar-100 text-lg">Entrelazadas</h1>
-				<p class="font-secondary text-primary-300 text-xs">No estamos solas</p>
+				<p class="font-secondary text-primary-300 text-xs">No estamos solas A.C.</p>
 			</div>
 		</div>
 		
