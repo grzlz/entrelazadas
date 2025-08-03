@@ -59,7 +59,7 @@
 		
 		<div class="hidden md:block">
 			<a href="tel:8001228584" class="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
-				🆘 Ayuda inmediata
+				📞 Contacto
 			</a>
 		</div>
 	</nav>
@@ -72,7 +72,7 @@
 		<li><a href="/contacto" class="block hover:text-primary-500 transition-colors">Contacto</a></li>
 		<li class="border-t border-primary-100 pt-4">
 			<a href="tel:8001228584" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors inline-block">
-				🆘 Ayuda inmediata
+				📞 Contacto
 			</a>
 		</li>
 	</ul>
