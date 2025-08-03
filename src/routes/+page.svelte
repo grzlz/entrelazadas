@@ -1,14 +1,14 @@
 <main class="flex flex-col min-h-screen ">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-4 min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-6 min-h-screen flex flex-col justify-start relative overflow-hidden">
         <!-- Subtle background pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-10 left-10 w-32 h-32 bg-primary-200 rounded-full blur-xl"></div>
             <div class="absolute bottom-20 right-16 w-24 h-24 bg-secondary-200 rounded-full blur-xl"></div>
         </div>
         
-        <div class="max-w-4xl mx-auto text-left relative z-10">
-            <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary font-bold mb-12 text-gray-800 leading-relaxed">
+        <div class="max-w-4xl mx-auto text-left mt-6 relative z-10 px-2">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary font-bold mb-12 text-gray-800 leading-relaxed">
                 Ofrecemos 
                 <span class="bg-primary-400/80 text-white px-2 py-1 rounded-3xl">asesoría legal</span> 
                 <br>
