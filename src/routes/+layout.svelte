@@ -4,13 +4,12 @@
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
 
-  injectAnalytics();
-
+  
 	let { children } = $props();
-
-	let menuOpen = $state(false)
-
-    const year = new Date().getFullYear();
+  let menuOpen = $state(false)
+  const year = new Date().getFullYear();
+  
+  injectAnalytics();
 
 </script>
 
