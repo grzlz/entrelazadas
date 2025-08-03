@@ -23,8 +23,8 @@
 				<img src="./favicon.png" alt="Entrelazadas" class="h-full w-full object-contain">
 			</div>
 			<div>
-				<h1 class="font-primary font-bold text-primary-800 text-lg">Entrelazadas</h1>
-				<p class="font-secondary text-primary-600 text-xs">No estamos solas</p>
+				<h1 class="font-primary font-bold text-primar-100 text-lg">Entrelazadas</h1>
+				<p class="font-secondary text-primary-300 text-xs">No estamos solas</p>
 			</div>
 		</div>
 		
