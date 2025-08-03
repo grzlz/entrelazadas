@@ -1,28 +1,25 @@
 <main class="flex flex-col min-h-screen ">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-6 min-h-screen flex flex-col justify-between relative overflow-hidden">
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-6 min-h-[90vh] flex flex-col justify-between relative overflow-hidden">
         <!-- Subtle background pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-10 left-10 w-32 h-32 bg-primary-200 rounded-full blur-xl"></div>
             <div class="absolute bottom-20 right-16 w-24 h-24 bg-secondary-200 rounded-full blur-xl"></div>
         </div>
         
-        <div class="max-w-4xl mx-auto text-left pt-8 relative z-10 px-2">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary mt-4 font-bold mb-12 text-gray-800 leading-relaxed">
+        <div class="max-w-4xl mx-auto text-left relative z-10 px-2 pt-16">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary font-bold mb-8 text-gray-800 leading-relaxed">
                 Ofrecemos 
-                <span class="bg-primary-400/80 text-white px-2 py-1 rounded-3xl">asesoría legal</span> 
+                <span class="bg-primary-400/80 text-white px-1 py-0.5 rounded-2xl text-[0.9em]">asesoría legal</span> 
                 <br>
                 y 
-                <span class="bg-secondary-400/80 text-white px-2 py-1 rounded-3xl">apoyo psicológico</span> 
+                <span class="bg-secondary-400/80 text-white px-1 py-0.5 rounded-2xl text-[0.9em]">apoyo psicológico</span> 
                 <br>
                 para mujeres que lo necesitan.
             </h1>
             
-        </div>
-        
-        <div class="max-w-4xl mx-auto text-left pb-12 relative z-10 px-2">
             <div class="space-y-4">
-                <button class="border-2 border-primary-500 text-primary-700 hover:bg-primary-500 hover:text-white px-8 py-3 rounded-lg font-primary font-medium text-sm transition-all duration-200">
+                <button class="border-2 border-primary-400 text-primary-700 hover:bg-primary-500 hover:text-white px-5 py-3 rounded-lg font-primary font-medium text-sm transition-all duration-200 mt-12">
                     Contactar
                 </button>
                 
@@ -31,10 +28,28 @@
                 </p>
             </div>
         </div>
+        
+        <!-- Scroll indicator -->
+        <div class="flex justify-center pb-8">
+            <button 
+                onclick={() => document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' })} 
+                class="flex flex-col items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors group"
+            >
+                <span class="text-sm font-secondary">Conoce nuestro trabajo</span>
+                <svg 
+                    class="w-6 h-6 animate-bounce" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </button>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section class="bg-primary-50 py-16 px-6">
+    <section id="about-section" class="bg-primary-50 py-16 px-6">
         <div class="max-w-4xl mx-auto text-center">
             <div class="mb-8">
                 <img src="./banner-bg-primary.png" alt="Entrelazadas, no estamos solas A.C." class="mx-auto max-w-xs w-full h-auto">
