@@ -1,6 +1,10 @@
 <script>
 	import '../app.css';
 	import { slide } from 'svelte/transition';
+  import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+
+  injectAnalytics();
 
 	let { children } = $props();
 
