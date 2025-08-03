@@ -8,7 +8,7 @@
         </div>
         
         <div class="max-w-4xl mx-auto text-left relative z-10 px-2 pt-16">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary font-bold mb-8 text-gray-800 leading-relaxed">
+            <h1 class="text-3xl sm:text-3xl md:text-5xl xl:text-6xl font-primary font-bold mb-8 text-gray-800 leading-relaxed">
                 Ofrecemos 
                 <span class="bg-primary-400/80 text-white px-1 py-0.5 rounded-2xl text-[0.9em]">asesoría legal</span> 
                 <br>
