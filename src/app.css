@@ -1,3 +1,56 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
+
+@theme {
+    /* Primary Colors - Warm Coral/Pink from brand palette */
+    --color-primary-50: oklch(0.96 0.02 15);        /* Very light coral */
+    --color-primary-100: oklch(0.92 0.04 15);       /* Light coral */
+    --color-primary-200: oklch(0.85 0.08 15);       /* Soft coral */
+    --color-primary-300: oklch(0.75 0.12 15);       /* Medium coral */
+    --color-primary-400: oklch(0.6596 0.1746 18.2);       /* Coral from palette */
+    --color-primary-500: oklch(0.55 0.18 15);       /* Deeper coral */
+    --color-primary-600: oklch(0.48 0.16 15);       /* Rich coral */
+    --color-primary-700: oklch(0.40 0.14 15);       /* Dark coral */
+    --color-primary-800: oklch(0.32 0.12 15);       /* Darker coral */
+    --color-primary-900: oklch(0.25 0.10 15);       /* Deepest coral */
+    
+    /* Secondary Colors - Calming Teal/Blue from brand palette */
+    --color-secondary-50: oklch(0.96 0.02 180);     /* Very light teal */
+    --color-secondary-100: oklch(0.92 0.04 180);    /* Light teal */
+    --color-secondary-200: oklch(0.85 0.08 180);    /* Soft teal */
+    --color-secondary-300: oklch(0.75 0.12 180);    /* Medium teal */
+    --color-secondary-400: oklch(0.60 0.15 180);    /* Teal from palette */
+    --color-secondary-500: oklch(0.50 0.16 180);    /* Deeper teal */
+    --color-secondary-600: oklch(0.42 0.14 180);    /* Rich teal */
+    --color-secondary-700: oklch(0.35 0.12 180);    /* Dark teal */
+    --color-secondary-800: oklch(0.28 0.10 180);    /* Darker teal */
+    --color-secondary-900: oklch(0.22 0.08 180);    /* Deepest teal */
+
+    /* Neutral Colors - Warm grays that complement the palette */
+    --color-gray-50: oklch(0.98 0.005 15);          /* Warm white */
+    --color-gray-100: oklch(0.95 0.008 15);         /* Very light warm gray */
+    --color-gray-200: oklch(0.88 0.012 15);         /* Light warm gray */
+    --color-gray-300: oklch(0.75 0.015 15);         /* Medium light gray */
+    --color-gray-400: oklch(0.62 0.018 15);         /* Medium gray */
+    --color-gray-500: oklch(0.50 0.020 15);         /* Medium dark gray */
+    --color-gray-600: oklch(0.42 0.018 15);         /* Dark gray */
+    --color-gray-700: oklch(0.35 0.015 15);         /* Darker gray */
+    --color-gray-800: oklch(0.28 0.012 15);         /* Very dark gray */
+    --color-gray-900: oklch(0.22 0.010 15);         /* Deepest gray */
+
+    /* Typography - Warm, approachable fonts */
+    --font-primary: "Poppins", "Inter", sans-serif;     /* Primary headings */
+    --font-secondary: "Source Sans Pro", "Roboto", sans-serif;  /* Body text */
+    --font-accent: "Merriweather", serif;            /* Special emphasis */
+
+    /* Comfort/Safety colors */
+    --color-safe-green-50: oklch(0.96 0.02 140);
+    --color-safe-green-500: oklch(0.65 0.15 140);
+    --color-safe-green-700: oklch(0.45 0.12 140);
+    
+    --color-gentle-blue-50: oklch(0.96 0.02 220);
+    --color-gentle-blue-500: oklch(0.60 0.12 220);
+    --color-gentle-blue-700: oklch(0.40 0.10 220);
+
+}

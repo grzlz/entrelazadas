@@ -10,108 +10,150 @@
 
 </script>
 
-<div class="flex flex-col min-h-screen  bg-gray-400">
+<div class="flex flex-col min-h-screen bg-primary-50">
 	
-	<nav class="flex justify-between items-center px-8 py-3 bg-gray-900">
-		<div class="h-13 w-13">
-			<img src="./favicon.png" alt="">
+	<nav class="flex justify-between items-center px-8 py-4 shadow-sm border-b border-primary-200 bg-gradient-to-r from-primary-50 to-secondary-50">
+		<!-- Desktop: Logo + Text -->
+		<div class="hidden md:flex items-center gap-3">
+			<div class="h-12 w-12">
+				<img src="./favicon.png" alt="Entrelazadas" class="h-full w-full object-contain">
+			</div>
+			<div>
+				<h1 class="font-primary font-bold text-primary-800 text-lg">Entrelazadas</h1>
+				<p class="font-secondary text-primary-600 text-xs">No estamos solas</p>
+			</div>
 		</div>
 		
-		<ul class="hidden md:flex gap-4 text-gray-100">
-			<li>Holaaa</li>
-			<li>Necesito</li>
-			<li>Más</li>
-		</ul>
-
-		<button class="md:hidden text-gray-50" onclick={() => menuOpen = !menuOpen} aria-label="Hamburger">
-			<svg
+		<!-- Mobile: Prominent Logo + Text + Hamburger -->
+		<div class="md:hidden flex justify-between items-center w-full py-3">
+			<div class="flex items-center gap-3">
+				<div class="h-10 w-10 flex-shrink-0">
+					<img src="./favicon.png" alt="Entrelazadas" class="h-full w-full object-contain">
+				</div>
+				<div>
+					<h1 class="font-primary font-bold text-primary-800 text-lg leading-tight">Entrelazadas</h1>
+					<p class="font-secondary text-primary-600 text-xs leading-tight">No estamos solas A.C.</p>
+				</div>
+			</div>
+			<button class="text-primary-800 p-2 -mr-2" onclick={() => menuOpen = !menuOpen} aria-label="Menú">
+				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 					stroke-width="2"
 					class="w-6 h-6"
 				>
-				<line x1="4" y1="6" x2="20" y2="6" />
-				<line x1="4" y1="12" x2="20" y2="12" />
-				<line x1="4" y1="18" x2="20" y2="18" />
-			</svg>
-		</button>
+					<line x1="4" y1="6" x2="20" y2="6" />
+					<line x1="4" y1="12" x2="20" y2="12" />
+					<line x1="4" y1="18" x2="20" y2="18" />
+				</svg>
+			</button>
+		</div>
 		
+		<ul class="hidden md:flex gap-8 text-primary-800 font-secondary">
+			<li><a href="/" class="hover:text-secondary-600 transition-colors">Inicio</a></li>
+			<li><a href="/servicios" class="hover:text-secondary-600 transition-colors">Servicios</a></li>
+			<li><a href="/recursos" class="hover:text-secondary-600 transition-colors">Recursos</a></li>
+			<li><a href="/contacto" class="hover:text-secondary-600 transition-colors">Contacto</a></li>
+		</ul>
+		
+		<div class="hidden md:block">
+			<a href="tel:8001228584" class="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
+				🆘 Ayuda inmediata
+			</a>
+		</div>
 	</nav>
 
 	{#if menuOpen}
-	<ul class="flex flex-col bg-gray-700 text-gray-400 p-2 gap-2 text-center rounded-b-lg" in:slide={{ duration: 300 }} out:slide={{ duration: 300 }}>
-		<li>Uno</li>
-		<li>Dos</li>
-
+	<ul class="flex flex-col bg-white border-b border-primary-100 text-primary-700 p-4 gap-4 shadow-sm font-secondary" in:slide={{ duration: 300 }} out:slide={{ duration: 300 }}>
+		<li><a href="/" class="block hover:text-primary-500 transition-colors">Inicio</a></li>
+		<li><a href="/servicios" class="block hover:text-primary-500 transition-colors">Servicios</a></li>
+		<li><a href="/recursos" class="block hover:text-primary-500 transition-colors">Recursos</a></li>
+		<li><a href="/contacto" class="block hover:text-primary-500 transition-colors">Contacto</a></li>
+		<li class="border-t border-primary-100 pt-4">
+			<a href="tel:8001228584" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors inline-block">
+				🆘 Ayuda inmediata
+			</a>
+		</li>
 	</ul>
 	{/if}
 	
 	
 	{@render children()}
 
-<footer class="bg-gray-900 text-gray-300 mt-12">
-  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+<footer class="bg-gradient-to-b from-gray-800 to-gray-900 text-gray-300 mt-12">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
     
     <!-- About Us -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">About Us</h2>
-      <p class="text-sm leading-relaxed">
-        We are a collective of designers, developers, and thinkers passionate about creating beautiful and efficient web experiences.
+      <h2 class="text-lg font-bold mb-4 text-white">Entrelazadas A.C.</h2>
+      <p class="text-sm leading-relaxed mb-4">
+        Organización civil comprometida con erradicar la violencia de género a través del apoyo psicológico y legal integral.
+      </p>
+      <p class="text-xs text-gray-400">
+        🔒 Todos nuestros servicios son confidenciales y gratuitos.
       </p>
     </div>
 
-    <!-- Navigation -->
-
-    <!-- Social Media -->
+    <!-- Quick Links -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">Follow Us</h2>
-      <div class="flex gap-4">
-        <a href="#" aria-label="Twitter" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M8 19c11 0 14-9 14-14v-.5A10 10 0 0122 4a9.86 9.86 0 01-2.828.775A4.94 4.94 0 0021.5 2a9.77 9.77 0 01-3.127 1.195A4.92 4.92 0 0016.5 2a4.92 4.92 0 00-4.92 4.92c0 .386.043.762.127 1.122A13.978 13.978 0 013 3.6a4.92 4.92 0 001.523 6.574A4.9 4.9 0 012 9.4v.062a4.92 4.92 0 003.946 4.827 4.93 4.93 0 01-2.213.084 4.93 4.93 0 004.6 3.417A9.867 9.867 0 012 18.543 13.949 13.949 0 008 19z" />
-          </svg>
+      <h2 class="text-lg font-bold mb-4 text-white">Enlaces rápidos</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/servicios" class="hover:text-primary-300 transition-colors">Nuestros servicios</a></li>
+        <li><a href="/recursos" class="hover:text-primary-300 transition-colors">Recursos útiles</a></li>
+        <li><a href="/contacto" class="hover:text-primary-300 transition-colors">Contacto</a></li>
+        <li><a href="/blog" class="hover:text-primary-300 transition-colors">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Emergency Contact -->
+    <div>
+      <h2 class="text-lg font-bold mb-4 text-white">¿Necesitas ayuda?</h2>
+      <div class="space-y-3">
+        <a href="tel:911" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
+          🚨 Emergencia 911
         </a>
-        <a href="#" aria-label="GitHub" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path fill-rule="evenodd"
-              d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577v-2.01c-3.338.725-4.033-1.608-4.033-1.608-.547-1.388-1.333-1.758-1.333-1.758-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.305 3.495.997.108-.775.42-1.305.763-1.604-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.52.117-3.168 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.648.243 2.865.12 3.168.77.84 1.233 1.911 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.103.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"
-              clip-rule="evenodd" />
-          </svg>
+        <a href="tel:8001228584" class="block bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
+          📞 Línea Nacional
         </a>
-        <a href="#" aria-label="LinkedIn" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6 1.11 6 0 4.88 0 3.5S1.11 1 2.49 1C3.87 1 4.98 2.12 4.98 3.5zM.17 8h4.64v13.99H.17V8zm7.93 0h4.45v1.91h.06c.62-1.18 2.13-2.43 4.4-2.43 4.7 0 5.57 3.09 5.57 7.1V22H18V15.3c0-1.59-.03-3.63-2.21-3.63-2.21 0-2.55 1.73-2.55 3.52V22H8.1V8z" />
-          </svg>
+        <a href="https://wa.me/525512345678" class="block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
+          💚 WhatsApp
         </a>
       </div>
     </div>
 
-    <!-- Newsletter -->
+    <!-- Social Media -->
     <div>
-      <h2 class="text-xl font-bold mb-4 text-white">Newsletter</h2>
-      <p class="text-sm mb-4">Stay updated with our latest posts and insights.</p>
-      <form class="flex flex-col sm:flex-row gap-2">
-        <input
-          type="email"
-          placeholder="Your email"
-          class="w-full px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
-        />
-        <button
-          type="submit"
-          class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md transition"
-        >
-          Subscribe
+      <h2 class="text-lg font-bold mb-4 text-white">Síguenos</h2>
+      <div class="flex gap-4 mb-4">
+        <a href="https://www.facebook.com/EntrelazadasAC/" aria-label="Facebook" class="hover:text-primary-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <button aria-label="Instagram" class="hover:text-primary-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
         </button>
-      </form>
+        <button aria-label="Twitter" class="hover:text-primary-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </button>
+      </div>
+      <p class="text-xs text-gray-400">
+        Comparte recursos útiles y ayuda a otras mujeres a encontrar apoyo.
+      </p>
     </div>
   </div>
 
   <!-- Copyright -->
   <div class="border-t border-gray-700 text-center text-sm py-6 text-gray-400">
-    © {year} YourSiteName. All rights reserved.
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="mb-2">© {year} Entrelazadas, no estamos solas A.C. Todos los derechos reservados.</p>
+      <p class="text-xs">Una organización comprometida con erradicar la violencia de género en México.</p>
+    </div>
   </div>
 </footer>
 
