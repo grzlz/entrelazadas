@@ -1,6 +1,6 @@
 <main class="flex flex-col min-h-screen ">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-6 min-h-[90vh] flex flex-col justify-between relative overflow-hidden">
+    <section class="bg-gradient-to-br from-primary-50 to-secondary-100 px-6 min-h-[80vh] flex flex-col justify-between relative overflow-hidden">
         <!-- Subtle background pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-10 left-10 w-32 h-32 bg-primary-200 rounded-full blur-xl"></div>

@@ -12,7 +12,7 @@
 
 <div class="flex flex-col min-h-screen bg-primary-50">
 	
-	<nav class="flex justify-between items-center px-8 py-4 shadow-sm border-b border-primary-200 bg-gradient-to-r from-primary-50 to-secondary-50">
+	<nav class="flex justify-between items-center px-8 py-4 shadow-sm border-b border-primary-200 bg-secondary-800">
 		<!-- Desktop: Logo + Text -->
 		<div class="hidden md:flex items-center gap-3">
 			<div class="h-12 w-12">
@@ -31,11 +31,11 @@
 					<img src="./favicon.png" alt="Entrelazadas" class="h-full w-full object-contain">
 				</div>
 				<div>
-					<h1 class="font-primary font-bold text-primary-800 text-lg leading-tight">Entrelazadas</h1>
-					<p class="font-secondary text-primary-600 text-xs leading-tight">No estamos solas A.C.</p>
+					<h1 class="font-primary font-bold text-primary-100 text-lg leading-tight">Entrelazadas</h1>
+					<p class="font-secondary text-primary-300 text-xs leading-tight">No estamos solas A.C.</p>
 				</div>
 			</div>
-			<button class="text-primary-800 p-2 -mr-2" onclick={() => menuOpen = !menuOpen} aria-label="Menú">
+			<button class="text-primary-300 p-2 -mr-2" onclick={() => menuOpen = !menuOpen} aria-label="Menú">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
@@ -57,11 +57,6 @@
 			<li><a href="/contacto" class="hover:text-secondary-600 transition-colors">Contacto</a></li>
 		</ul>
 		
-		<div class="hidden md:block">
-			<a href="tel:8001228584" class="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm">
-				📞 Contacto
-			</a>
-		</div>
 	</nav>
 
 	{#if menuOpen}
@@ -70,11 +65,7 @@
 		<li><a href="/servicios" class="block hover:text-primary-500 transition-colors">Servicios</a></li>
 		<li><a href="/recursos" class="block hover:text-primary-500 transition-colors">Recursos</a></li>
 		<li><a href="/contacto" class="block hover:text-primary-500 transition-colors">Contacto</a></li>
-		<li class="border-t border-primary-100 pt-4">
-			<a href="tel:8001228584" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors inline-block">
-				📞 Contacto
-			</a>
-		</li>
+
 	</ul>
 	{/if}
 	
@@ -106,21 +97,6 @@
       </ul>
     </div>
 
-    <!-- Emergency Contact -->
-    <div>
-      <h2 class="text-lg font-bold mb-4 text-white">¿Necesitas ayuda?</h2>
-      <div class="space-y-3">
-        <a href="tel:911" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
-          🚨 Emergencia 911
-        </a>
-        <a href="tel:8001228584" class="block bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
-          📞 Línea Nacional
-        </a>
-        <a href="https://wa.me/525512345678" class="block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center transition-colors">
-          💚 WhatsApp
-        </a>
-      </div>
-    </div>
 
     <!-- Social Media -->
     <div>
